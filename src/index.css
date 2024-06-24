@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:rgb(10, 173, 10);
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+.network{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    background-color: var(--main-color);
+    padding: 15px;
+    box-shadow: var(--shadow);
+    z-index: 9999;
+    color: white;
+
+}
+.border-main{
+    border: solid 1px  !important;
+}
+
+body{
+    font-family: var(--font-family) !important;
+}
+body.light {
+    background-color: white !important;
+    
+  }
+  
+  body.dark {
+    background-color: #212529 !important;
+   
+  }
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+.product:hover 
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+    border-radius: 10px;
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+.loading{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-sm{
+    --bs-btn-padding-x: 0.3rem !important;
+}
+
+
+
+/* media */
+
+@media (max-width:2000px) and (min-width:1100px) {
+    .imageSlider{
+        height: 300px;
+    }
+    .headText{
+        font-size: 1.5rem;
+    }
+    .textCart{
+        font-size: 2.2rem;
+    }
+    .textbrand{
+        font-size: 0.9rem;
+    }
+    .headFav{
+        font-size: 1rem;
+    }
+  
+   
+}
+@media (max-width:1099px) and (min-width:500px) {
+    .imageSlider{
+        height: 300px;
+    }
+    .headText{
+        font-size: 1.2rem;
+    }
+    .textCart{
+        font-size: 2rem;
+    }
+    .textbrand{
+        font-size: 0.8rem;
+    }
+    .headFav{
+        font-size: 0.9rem;
+    }
+  
+   
+}
+
+@media (max-width:499px) and (min-width:200px) {
+    .imageSlider{
+        height: 200px;
+    }
+    .headText{
+        font-size: 1rem;
+    }
+    .textCart{
+        font-size: 1.5rem;
+    }
+    .textbrand{
+        font-size: 0.7rem;
+    }
+    .headFav{
+        font-size: 0.8rem;
+    }
+  
+  
+  
+    
+}
+
+
+/* light mode */
+.LightMode.head{
+    color: #212529 !important;
+} 
+.LightMode.border{
+    border-color: #dee2e6 !important;
+}
+.LightMode.border-main{
+    border-color: #0aad0a !important;
+    color: #212529 !important;
+}
+.LightMode.borderB{
+    border-color: #dee2e6 !important;
+}
+/* dark mode */
+.DarkMode.head{
+    color: #9ca3af !important;
+}
+.DarkMode.border{
+    border-color: #9ca3af !important;
+}
+.DarkMode.border-main{
+    border-color: #9ca3af !important;
+    color: #dee2e6 !important;
+}
+.DarkMode.borderB{
+    border-color: #9ca3af !important;
+}

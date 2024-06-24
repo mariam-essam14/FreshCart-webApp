@@ -1,0 +1,10 @@
+.rowSlider{
+margin-top: 65px !important;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background-color: #0aad0a !important;
+}
+.owl-theme .owl-dots .owl-dot:hover span{
+    background-color: rgba(10, 173, 10,0.6) ;
+}
+

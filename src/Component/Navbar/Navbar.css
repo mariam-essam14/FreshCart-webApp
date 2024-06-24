@@ -1,0 +1,25 @@
+
+
+.collapse{
+    visibility: visible !important;
+}
+.navbar-toggler{
+    border: none !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+.logoImage path{
+    fill: #fff;
+}
+
+
+
+
+.lightMode.nav-link {
+    color: #212529 !important;
+}
+
+.darkMode.nav-link {
+    color: #9ca3af !important;
+}
